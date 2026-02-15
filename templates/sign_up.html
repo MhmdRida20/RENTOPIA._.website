@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Sign_up</title>
+    <link rel="stylesheet" href="/static/css/sign_up.css">
+
+</head>
+<body>
+  
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('signup') }}">
+    <div>
+       
+            <h1>Sign up</h1>
+            <div>
+                <input id="profilephoto" type="file" name="profilephoto">
+                <input id="email" type="email" name="email" placeholder="email">
+                <input id="fullname" type="text" name="fullname" placeholder="fullname">
+                <input id="username" type="text" name="username" placeholder="username">
+                <input id="password" type="password" name="password" placeholder="password">
+                <input id="phone" type="text" name="phone" placeholder="phone">
+                <input type="date" name="date_birth" id="date_birth" min="1924-01-01" max="2006-03-15" placeholder="birthdate">
+                
+            </div>
+                <button type="submit" id="signup_but">sign up</button>
+         
+            </div>
+        </form>
+</div>
+<!-- 
+<script src="js/signup.js"></script> -->
+</body>
+</html>

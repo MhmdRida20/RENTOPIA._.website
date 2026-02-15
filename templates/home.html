@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css ">
+  <title>Home</title>
+  <link rel="stylesheet" href="/static/css/home.css">
+</head>
+
+<body>
+  <div>
+    <header>
+      <nav>
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                      <use xlink:href="#bootstrap"></use>
+                  </svg>
+              </a>
+
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li id="bar-name">Rentopia</li>
+                  <li><a href="{{ url_for('home') }}" class="nav-link px-2 link-body-emphasis">Home</a></li>
+                  <!-- <li><a href="#" class="nav-link px-2 link-body-emphasis">Categories</a></li> -->
+                  <li>
+                      <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Categories
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><a href="{{ url_for('apartments') }}"><button class="dropdown-item"
+                                          type="button">Appartments</button></a></li>
+                              <li><a href="{{ url_for('lands') }}"><button class="dropdown-item"
+                                          type="button">Lands</button></a></li>
+                              <li><a href="{{ url_for('shops') }}"><button class="dropdown-item"
+                                          type="button">Shops</button></a></li>
+                          </ul>
+                      </div>
+
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                  </li>
+                        <li id="product_li"><a href="{{ url_for('feedbacks2') }}" class="nav-link px-2 link-body-emphasis">Feedbacks</a></li>
+                      </ul>
+            
+                      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" action="{{ url_for('filter2') }}" >
+                    
+                        <button id="filter-btn" action="{{ url_for('filter2') }}">Filter</button>
+                    </form>
+                    
+                    
+                    
+            
+                      <div class="dropdown text-end">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          {% if current_user.is_authenticated %}
+        <img src="{{ current_user.profilephoto }}" alt="profile_icon" width="32" height="32"
+          class="rounded-circle">
+        {% endif %}
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="{{ url_for('logout') }}">Sign out</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </header>
+<main>
+    <!-- Lands -->
+    <div class="see_more">
+        <h1>Lands</h1>
+        <a href="{{ url_for('lands') }}">see more</a>
+    </div>
+    <div class="scroll_container">
+      {% for land in lands %}
+      <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">land</strong>
+                  <h3 class="mb-0">Suggested post</h3>
+                  <div class="mb-1 text-body-secondary">Price by day : {{ land.price }}</div>
+                  <p class="card-text mb-auto">{{ land.location }}</p>
+                  
+                  <a href="{{ url_for('details' , land_id=land.land_id)}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi">
+                          <use xlink:href="#chevron-right"></use>
+                      </svg>
+                  </a>
+              </div>
+              <div class="col-auto d-none d-lg-block thumbnail-container">
+                <img src="{{ land.image }}" alt="Land Image" id="imagee">
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+  
+  <div class="see_more">
+    <h1>  Shops</h1>
+    <a href="{{ url_for('shops') }}">see more</a>
+</div>
+<div class="scroll_container">
+  {% for shop in shops %}
+  <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">shop</strong>
+              <h3 class="mb-0">Suggested post</h3>
+              <div class="mb-1 text-body-secondary">Price by day : {{ shop.price }}</div>
+              <p class="card-text mb-auto">{{ shop.location }}</p>
+              
+              <a href="{{ url_for('details2' , shop_id=shop.shop_id)}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <svg class="bi">
+                      <use xlink:href="#chevron-right"></use>
+                  </svg>
+              </a>
+          </div>
+          <div class="col-auto d-none d-lg-block thumbnail-container">
+            <img src="{{ shop.image }}" alt="shop Image" id="imagee">
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<div class="see_more">
+  <h1>  Apartments</h1>
+  <a href="{{ url_for('apartments') }}">see more</a>
+</div>
+<div class="scroll_container">
+{% for apartment in apartments %}
+<div class="col-md-6">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">apartment</strong>
+            <h3 class="mb-0">Suggested post</h3>
+            <div class="mb-1 text-body-secondary">Price by day : {{ apartment.price }}</div>
+            <p class="card-text mb-auto">{{ apartment.location }}</p>
+            
+            <a href="{{ url_for('details3' , apartment_id=apartment.apartment_id)}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                Continue reading
+                <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="col-auto d-none d-lg-block thumbnail-container">
+          <img src="{{ apartment.image }}" alt="apartment Image" id="imagee">
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+    <div class="feedback">
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0">Feedbacks</h6>
+            <small class="d-block text-end mt-3">
+              <a href="{{ url_for('feedbacks2') }}">See More</a>
+          </small>
+            {% for feedback in feedbacks %}
+            <div class="d-flex text-body-secondary pt-3">
+              <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <img src="{{ feedback.profilephoto }}" alt="profile_icon" width="90px" height="90px" class="rounded-circle">
+            </svg>
+            <p class="pb-3 mb-0 small lh-sm border-bottom">
+              <strong class="d-block text-gray-dark">{{ feedback.username }}</strong>
+              {{ feedback.feedback }}
+            </p>
+          </div>
+          {% endfor %}
+            
+            </div>
+            
+        </div>
+    </div>
+</main>
+</div>
+
+<script src="js/details.js"></script>
+</body>
+
+</html>

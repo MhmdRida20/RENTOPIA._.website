@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Birth_profile</title>
+    <link rel="stylesheet" href="/static/css/birth_profile.css">
+</head>
+
+<body>
+    <a href="{{ url_for('signup2') }}"><img src="img/back-button (1).png"></a>
+    <div>
+        <div>
+            <img src="img/profile_icon.png">
+        </div>
+        <form action="{{ url_for('birthdate') }}" method='POST'>
+            <div>
+                <label for="profileInput">Choose your profile</label>
+                <input type="file" name="profileInput" accept="image/*">
+            </div>
+            <div>
+                <label for="dateOfBirth" class="dateLabel">Date of birth:</label>
+                <input type="date" name="date_birth" id="date_birth" min="1924-01-01" max="2006-03-15">
+            </div>
+            <div>
+                <button type="submit" id="next">Next</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/birth_profile.js"></script>
+</body>
+
+</html>

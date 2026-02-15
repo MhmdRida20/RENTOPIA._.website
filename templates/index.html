@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>Rentopia</title>
+</head>
+
+<body>
+    <div>
+        <main>
+            <div>
+                <div>
+                    <h1>Rentupia</h1>
+                    <p>A real estate rental website
+                        that facilitates <br>the process of
+                        renting properties. </p>
+                    <a href="{{ url_for('learnmore2') }}">Learn More</a>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.instagram.com/_rentopia?igsh=MTFzZmg0MmZhOHkwMw=="
+                                        target="_blank">
+                                        <img src="/static/img/instagram.png" class="social_media">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzEyMDQ5OTE2LCJjYWxsc2l0ZV9pZCI6MzQzNjE1NzkwMjAxNjQ0fQ%3D%3D&cuid=AYh7w2AaCu9M3G5YrXL_fKgG7d7hCtRQ23OUmmKpIdbgV0fWAh1Jh94loM30F6YJ6GjDcidVjwxq1yhSxrqr0s54wiJtQ2uJZmDZIWr3Shj1gA&next"
+                                        target="_blank">
+                                        <img src="/static/img/facebook.png" class="social_media">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://x.com/rentopia24?s=11" target="_blank">
+                                        <img src="/static/img/x.png" class="social_media">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div >
+
+                    <ul type="none">
+
+                        <li><button id="sign_but"><a href="{{ url_for('signup2') }}" target="_self">Sign In</a></button></li>
+                        <li><button id="log_but"><a href="{{ url_for('login2') }}" target="_self">Log In</a></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="div-to-delete">
+                <img src="/static/img/index.jpg.jpg">
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+.img{
+    width: 200px;
+    height: 200px;
+}
+main>div{
+display: flex;
+flex-flow: row;
+column-gap: 20px;
+}
+main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+.dropdown-menu >li> a{
+    text-decoration: none;
+}
+select{
+    width: 150px;
+    margin-right: 30%;
+    border-color:rgba(255, 255, 255, 0.9) ;
+}
+#filter-btn{
+    border-color: #0A6F71;
+    background-color :white;
+    border-radius: 7px;   
+}
+nav{
+    background-color: white;
+    height: 13% ;
+  
+}
+.nav-link{
+    color: #0A6F71 !important;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+#product_li{
+    margin-left: 20px;
+}
+#bar-name{
+    font-weight: 600;
+    font-size: x-large;
+    color: #0A6F71 !important;
+    margin-top: 0px;
+}
+.dropdown{
+    margin-right: 2%;
+}
+.nav{
+    margin-top:2%;
+}
+nav{
+    position:fixed !important;
+    top:0 !important;
+    width: 100% !important;
+    z-index:10;
+}
+.dropdown-toggle{
+    margin-left: 25%;
+}
+.btn{
+    background-color: #0A6F71;
+}
+body{
+    background-color: rgb(238, 243, 253) !important;
+}
+
+.to-pay{
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 7px;
+    color: white;
+    background-color: #0A6F71;
+}
+.to-pay>a{
+    text-decoration: none;
+    color: white;
+}
+  
+
+@media screen and (max-width:1000px){
+    main>div:first-of-type{
+        display: grid;
+        
+        }
+        main>div:nth-child(2){
+            display: grid;
+           
+        }
+        main>div>div:first-of-type{
+            width:100%;
+        }
+        main>div:first-of-type>div:first-of-type>div:nth-child(2)>div>img{
+            width:100%;
+        }
+        main>div:first-of-type>div:first-of-type>div:nth-child(2)>div{
+            width:100%;
+        }
+        main>div:first-of-type>div:nth-child(2){
+            margin-top: 20px;
+            width:100%
+        }
+        main>div:nth-child(2)>label{
+            margin-top: 20px;
+            width:100%
+        }
+        main>div:nth-child(2)>img{
+            margin-top: 20px;
+            width:100%
+        }
+        main>div:nth-child(3)>button{
+            margin-top: 20px;
+            margin-right: 50%;
+        }
+        nav{
+            height: 25% !important;
+        }
+        .dropdown{
+        margin-right: 0 !important;
+        
+        }
+        form{
+            
+            margin-top: 20px !important;
+            width: 40% !important;
+            
+        }
+        select{
+            margin-right: 0 !important;
+           
+          }
+          main{
+            margin-top: 20% !important;
+          }
+}
+@media screen and (max-width:800px) and (min-width:300px) {
+
+    select{
+      margin-right: 0 !important;
+     
+    }
+   
+  main{
+      margin-top: 40% !important;
+      
+    
+  }
+  nav{
+      height: 25% !important;
+  }
+  .dropdown{
+  margin-right: 0 !important;
+  
+  }
+  form{
+      
+      margin-top: 10px !important;
+      width: 40% !important;
+      
+  }
+}

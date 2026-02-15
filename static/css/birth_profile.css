@@ -1,0 +1,134 @@
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 15%;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    background-color: #0A6F71;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    /* height: 100vh; */
+    background-image:url("../img/signup_back.jpg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+a{
+    text-decoration: none;
+}
+input[type="date"]{
+    width: 80%; ;
+    height: 5%;
+    padding: 20px;
+    border: 0;
+   
+   background-color:#0A6F71;
+    border-radius: 10px;
+    outline: none;
+    font-size:18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+ 
+    margin-left: 10%;
+    
+}
+.dateLabel{
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 2em;
+    font-style: bold;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+   
+}
+body > div{
+    display: grid;
+    height: 70%;
+    justify-content: center;
+    border: solid;
+    border-color:black ;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    border-color:rgba(255, 255, 255, 0.5) ;
+    
+}
+body > div >div:nth-child(2){
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 5px;
+
+}
+img{
+ width:50% ;   
+ height:60% ;
+ margin-top: 20%;
+ margin-left: 25%;
+ 
+}
+body >a>img{
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-left: auto;
+}
+body > div >div:nth-child(2)>label:first-of-type,input:first-of-type{
+    margin-left:16% ;
+}
+body > div >div:nth-child(3){
+    display: flex;
+    justify-content: center ;
+    margin-left:7% ;
+    margin-bottom: 20%;
+    
+}
+
+body>div>div:nth-child(3)>button{
+    width: 45%;
+    height: 70%;
+    border-radius: 10px;
+    border-color: #0A6F71;
+    background-color: #0A6F71;
+    color: white;
+    font-weight: 300;
+    opacity: 0.9;
+    font-size: medium;
+
+}
+@media screen and (max-width:1000px)and (min-width:300px){
+    body{
+        height: 100vh;
+    }
+    body> div{
+        width:300px;
+        margin-left: 15%;
+        height: 60vh;
+    
+    }
+    body>div>div:nth-child(3)>button{
+        height: 25px;
+        margin-bottom: 25px;
+    }
+    .alert{
+        margin-left: 30%;
+    }
+    
+}

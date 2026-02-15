@@ -1,0 +1,257 @@
+
+ body{
+    background-color: rgb(238, 243, 253) !important;
+ }
+body>div {
+    display: grid;
+
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "footer footer footer footer footer footer"
+        "footer footer footer footer footer footer"
+        "footer footer footer footer footer footer"
+        "footer footer footer footer footer footer";
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    margin-top: 7%;
+    grid-area: main;
+    width: 97vw;
+}
+
+div>a>img {
+    height: 225px;
+    width: 320px;
+    margin-bottom: 5px;
+}
+
+.cardContainer>div {
+    /* this is the section of each 
+    photo  */
+    display: grid;
+    width: 20rem;
+    grid: 33.33%;
+    column-gap: 10px;
+    padding-bottom: 1%;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #D4D0C4;
+    border-top-style: dashed;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    grid-area: footer;
+    height: 75px;
+    margin-top: 12%;
+
+}
+
+footer>ul {
+    display: grid;
+    grid-column-gap: 70px;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+footer>ul>li>a {
+    color: black;
+    font-size: large;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+        Verdana, sans-serif;
+}
+
+
+#product_li {
+    margin-left: 20px;
+   
+}
+
+#bar-name {
+    font-weight: 600;
+    font-size: x-large;
+    color: white !important;
+    margin-top: 0px;
+}
+
+.dropdown {
+    margin-right: 2%;
+
+}
+
+.nav {
+    margin-top: 2%;
+}
+ #filter-btn{
+    border: solid;
+    border-color: #0A6F71;
+    background-color :white;
+    opacity: 1;    
+}
+
+nav {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10;
+    background-color: #0A6F71;
+    height: 13%;
+}
+
+.nav-link {
+    color: white !important ;
+    margin-bottom: 5%;
+    margin-left: 30%;
+
+}
+
+.dropdown-toggle {
+    margin-left: 25%;
+    background-color: #0A6F71 !important;
+}
+
+.btn {
+    background-color: #0A6F71;
+}
+
+@media screen and (max-width:800px) and (min-width:300px) {
+
+    select {
+        margin-right: 0 !important;
+
+    }
+
+    main {
+        margin-top: 35% !important;
+
+    }
+
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+
+    }
+
+    form {
+
+        margin-top: 10px !important;
+        width: 40% !important;
+
+    }
+
+    footer {
+        margin-top: 15% !important;
+        margin-bottom: 0% !important;
+        width: 100% !important;
+        height: 30% !important;
+    }
+
+    footer {
+        height: 25% !important;
+    }
+
+    footer>ul>li>a {
+
+        font-size: large !important;
+
+        font-size: 17px !important;
+
+    }
+
+    footer>ul {
+
+        margin-right: 50px !important;
+
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+
+    }
+
+    form {
+
+        margin-top: 20px !important;
+        width: 40% !important;
+
+    }
+
+    select {
+        margin-right: 0 !important;
+
+    }
+
+    main {
+        margin-top: 18% !important;
+
+    }
+
+    footer {
+        height: 30% !important;
+    }
+
+    /*  .card{
+  width:200px !important;
+      }
+ */
+
+}
+
+@media screen and (max-width:1000px) {
+    footer {
+
+        margin-top: 30% !important;
+        margin-bottom: 0% !important;
+
+
+    }
+
+    main {
+
+        margin-bottom: 5% !important;
+    }
+}

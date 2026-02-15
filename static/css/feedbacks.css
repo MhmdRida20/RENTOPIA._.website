@@ -1,0 +1,206 @@
+.profile_class{
+   
+    margin-top: 10px;
+}
+.feedback{
+    margin-right: 70%;
+}
+body>div>main>div{
+    width:100%;
+    display: inline-flex;
+    flex-flow: row;
+}
+body{
+    background-color: rgb(238, 243, 253) !important;
+}
+.img{
+    width: 7%;
+}
+body>div>main>div>div>img{
+    border-radius: 200px;
+    width: 100px;
+    height: 70px;
+
+}
+.dropdown-menu >li> a{
+    text-decoration: none;
+}
+body>div>main>div{
+    margin-bottom: 2.5%;
+}
+.feedback{
+    margin-top: 2%;
+  
+    width:80%;
+}
+p{
+    margin-left: 10%;
+}
+body>div {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main";
+    
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    margin-top: 100px;
+    grid-area: main;
+    width: 97vw;
+    
+}
+
+
+
+#product_li {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#product_li>a{
+    text-decoration: none;
+    color: white;
+}
+
+#bar-name {
+    font-weight: 600;
+    font-size: x-large;
+    color: #0A6F71 !important;
+    margin-top: 0px;
+}
+
+.dropdown {
+    margin-right: 2%;
+}
+#filter-btn{
+    border-color: #0A6F71;
+    background-color :white;
+    border-radius: 7px;   
+}
+
+.nav {
+    margin-top: 2%;
+}
+
+nav {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10;
+    background-color: white;
+    height: 13%;
+}
+
+.nav-link {
+    color: #0A6F71 !important ;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+#add-but{
+    background-color: #0A6F71;
+    color: white;
+    border-radius: 7px;
+    border-color: #0A6F71;
+    /* width: 70px; */}
+
+.dropdown-toggle {
+    margin-left: 25%;
+}
+
+.btn {
+    background-color: #0A6F71;
+}
+@media screen and (max-width:800px) and (min-width:300px) {
+    .feedback{
+        margin-left: 20%;
+    }
+    p{
+        margin-left: 25%;
+    }
+    select {
+        margin-right: 0 !important;
+    }
+
+    main {
+        margin-top: 175px !important;
+    }
+
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+    }
+
+    form {
+        margin-top: 10px !important;
+        width: 40% !important;
+    }
+
+   
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    .feedback{
+        margin-left: 20%;
+    }
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+    }
+
+    form {
+        margin-top: 20px !important;
+        width: 40% !important;
+    }
+
+    select {
+        margin-right: 0 !important;
+    }
+
+    main {
+        margin-top: 175px !important;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:1000px) {
+    .feedback{
+        margin-left: 20%;
+    }
+
+    main {
+        margin-bottom: 5% !important;
+       
+    }
+}

@@ -1,0 +1,274 @@
+h1 {
+    margin-top: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    margin-top: 7%;
+    grid-area: main;
+    width: 97vw;
+}
+
+select {
+    width: 150px;
+    margin-right: 30%;
+    border-color: rgba(255, 255, 255, 0.9);
+}
+#filter-btn{
+    border-color: #0A6F71;
+    background-color :white;
+    border-radius: 7px;   
+}
+.nav-link {
+    color: #0A6F71 !important;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+
+#product_li {
+    margin-left: 20px;
+}
+
+#bar-name {
+    font-weight: 600;
+    font-size: x-large;
+    color: #0A6F71 !important;
+    margin-top: 0px;
+}
+
+.dropdown {
+    margin-right: 2%;
+}
+
+.nav {
+    margin-top: 2%;
+}
+
+nav {
+    height: 13%;
+    background-color: white !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10;
+}
+
+
+body>div {
+    display: grid;
+
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main";
+
+}
+
+.scroll_container {
+    display: inline-flex;
+    column-gap: 5px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    height:21% ;
+}
+#imagee{
+    height: 100%;
+}
+/* .imgg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.thumbnail-container {
+    position: relative;
+    width: 195px;
+    height: 260px;
+    /* Adjust the height as needed */
+}
+
+.thumbnail-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(238, 243, 253) !important;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.see_more {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* 
+.init {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.first {
+    display: grid;
+    grid-row-gap: 2%;
+}
+
+.card-img-top {
+    height: 50%;
+}
+
+.card {
+    height: 350px;
+}
+ */
+.col-md-6 {
+    height: 100% !important;
+    background-color: white !important;
+}
+
+.btn {
+    background-color: #0A6F71;
+}
+
+.dropdown-toggle {
+    margin-left: 25%;
+}
+
+.dropdown-menu>li>a {
+    text-decoration: none;
+}
+/* .row{
+
+    height: 1500px;
+}
+ */
+@media screen and (max-width:800px) and (min-width:300px) {
+
+    select {
+        margin-right: 0 !important;
+
+    }
+
+    main {
+        margin-top: 30% !important;
+
+    }
+
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+
+    }
+
+    form {
+
+        margin-top: 10px !important;
+        width: 40% !important;
+
+    }
+
+    .scroll_container {
+        height: 210px !important;
+    }
+
+    .init {
+
+        flex-flow: column !important;
+        align-items: center !important;
+        row-gap: 10px !important;
+    }
+
+    .card {
+        width: 350px !important;
+    }
+
+    .first {
+
+        grid-row-gap: 1% !important;
+    }
+
+  
+    .see_more {
+        margin-right: 10px !important;
+    }
+
+    .feedback {
+        width: 90vw !important;
+    }
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+
+    }
+
+    form {
+
+        margin-top: 20px !important;
+        width: 40% !important;
+
+    }
+
+    select {
+        margin-right: 0 !important;
+
+    }
+
+    main {
+        margin-top: 18% !important;
+        /* margin-bottom: 0 !important;  */
+    }
+
+    .card {
+        width: 200px !important;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+    main {
+
+        margin-bottom: 5% !important;
+    }
+}

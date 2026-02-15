@@ -1,0 +1,87 @@
+body{
+    background-image: url(../img/signup_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body> form{
+    display: grid;
+    justify-content: center;
+    border: solid;
+    border-color:rgba(255, 255, 255, 0.5) ;
+    background-color: rgba(255, 255, 255, 0.5);
+    width:25%;
+    margin-left: 37%;
+    margin-top: 100px;
+    height: 50vh;
+    border-radius: 5px;
+}
+body > form >div>div:nth-child(2){
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 50px;
+    margin-bottom: 25px;
+}
+body > form > div >div:nth-child(2) > input{
+    width: 260px;
+    border-radius: 4px;
+}
+body >form >div>h1{
+    color: black;
+    margin-left: 30%;
+}
+/* body>div>div:nth-child(3)>a{
+   
+} */
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0A6F71;
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#login_but{
+    display:flex;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    border-color: #0A6F71;
+    background-color: #0A6F71;
+    color: white;
+    font-weight: 300;
+    opacity: 0.9;
+    font-size: medium;
+}
+
+body >a>img{
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width:1000px)and (min-width:300px){
+    #login_but{
+        width: 100px;
+    }
+    body >form> div >div:nth-child(2) > input{
+        width: 260px;
+      
+    }
+    body> form{
+        width:300px;
+        margin-left: 15%;
+        height: 45vh;
+        
+    }
+    body{
+        height: 100vh;
+    }
+    body >form >div>h1{
+        
+        margin-left: 20%;
+    }
+
+}

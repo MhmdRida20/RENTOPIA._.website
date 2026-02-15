@@ -1,0 +1,256 @@
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category_div {
+    width: 20%;
+    margin: 0 auto;
+    border: 3px solid #ccc;
+
+}
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    background-color: #0A6F71;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    text-align: center;
+    z-index: 1;
+}
+.add_image1{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+}
+.info{
+    display: grid;
+    row-gap: 7px;
+    border:solid;
+    border-color: #0A6F71;
+    
+    }
+    #Confirm{
+        margin-top: 5px;
+        background-color: #0A6F71;
+    color: white;
+    border-color: #0A6F71;
+    }
+    
+    #add{
+        width: 324px;
+      
+    }
+.category_f_div {
+    padding: 20px;
+    background-color: white;
+    height: 100%;
+}
+
+.category_f_div img {
+    width: 100%;
+}
+
+.category_s_div {
+    padding: 20px;
+    background-color: white;
+    height: 107%;
+}
+body{
+    background-color: rgb(238, 243, 253) !important;
+}
+
+body>div {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "header header header header header header"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main";
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    margin-top: 7%;
+    grid-area: main;
+    width: 97vw;
+}
+.rounded-circle{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+}
+div>a>img {
+    height: 225px;
+    width: 320px;
+    margin-bottom: 5px;
+}
+
+.cardContainer>div {
+    
+    display: grid;
+    width: 20rem;
+    grid: 33.33%;
+    column-gap: 10px;
+    padding-bottom: 1%;
+}
+
+.cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#product_li {
+    margin-left: 20px;
+}
+
+#bar-name {
+    font-weight: 600;
+    font-size: x-large;
+    color: #0A6F71 !important;
+    margin-top: 0px;
+}
+
+.dropdown {
+    margin-right: 2%;
+}
+.dropdown-menu >li> a{
+    text-decoration: none;
+}
+#filter-btn{
+    border-color: #0A6F71;
+    background-color :white;
+    border-radius: 7px;   
+}
+.nav {
+    margin-top: 2%;
+}
+.text-end{
+    background-color: white;
+}
+nav {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10;
+    background-color: white;
+    height: 13%;
+}
+
+.nav-link {
+    color: #0A6F71 !important ;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+
+.dropdown-toggle {
+    margin-left: 25%;
+}
+
+.btn {
+    background-color: #0A6F71;
+}
+
+@media screen and (max-width:800px) and (min-width:300px) {
+    
+    select {
+        margin-right: 0 !important;
+    }
+
+    main {
+        margin-top: 35% !important;
+    }
+
+    nav {
+        height: 25% !important;
+    }
+
+    .dropdown {
+        margin-right: 0 !important;
+    }
+
+    form {
+        margin-top: 10px !important;
+        width: 40% !important;
+    }
+
+
+
+}
+
+@media screen and (max-width:1000px) and (min-width:800px) {
+    nav {
+        height: 25% !important;
+    }
+   
+    .dropdown {
+        margin-right: 0 !important;
+    }
+
+    form {
+        margin-top: 20px !important;
+        width: 40% !important;
+    }
+
+    select {
+        margin-right: 0 !important;
+    }
+
+    main {
+        margin-top: 18% !important;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+   
+
+    main {
+        margin-bottom: 5% !important;
+    }
+}

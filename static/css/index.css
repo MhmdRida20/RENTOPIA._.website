@@ -1,0 +1,183 @@
+body{
+    margin-top: auto;
+    margin-bottom: auto;
+ 
+}
+.social_media{
+    width: 37px;
+    height:37px;
+    margin-top: 25px;
+margin-bottom: 10px;
+    
+}
+
+main>div>div:first-of-type{
+    height: 500px !important;
+}
+body>div:first-child {
+    display: grid;
+
+    grid-template-areas:
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main"
+        "main main main main main main";
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+  
+}
+main>div:first-child {
+     display: flex; 
+     flex-flow: column;
+    height: 85vh;
+    grid-area: main;
+    width: 50vw;
+   
+}
+main > div > div:first-child{
+    height: 85%;
+   
+}
+main > div > div:nth-child(2){
+    height: 15%;
+    
+}
+main > div > div:nth-child(2) >ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin-bottom: 20%;
+}
+main > div > div:nth-child(2) >ul> li{
+    margin-right: 50px;
+}
+main>div:nth-child(2) {
+    width: 50vw;
+    height: 85vh;
+    grid-area: main;
+
+}
+img {
+    width: 100%;
+    height: 100vh;
+}
+main > div > div:first-child >h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 4em;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    margin-left: 50px;
+  
+}
+main > div > div:first-child >p {
+    color: black;
+    font-size: larger;
+    margin-left: 50px;
+}
+
+main > div > div >a {
+    margin-left: 300px;
+    font-size: large;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0A6F71;
+}
+
+#log_but {
+    width: 120px;
+    height: 40px;
+    background-color:#0A6F71;
+    border-radius: 10px;
+    border-color: #0A6F71;
+    opacity: 0.9;
+    margin-top: 75px;
+}
+#log_but>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 300;
+}
+#sign_but {
+    width: 120px;
+    height: 40px;
+    font-size: large;
+    font-weight: 300;
+    background-color: #0A6F71;
+    border-radius: 10px;
+    border-color: #0A6F71;
+    color: white;
+    opacity: 0.9;
+    margin-top: 75px;
+}
+#sign_but>a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 300;
+}
+@media screen and (max-width: 768px){
+    #div-to-delete {
+        display: none;
+      }
+    body > div:first-of-type{
+        width:100%;
+        height: 100vh;
+        background-image: url(../img/mini.index.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+     }
+     main > div > div:nth-child(2) >ul{
+        justify-content: center;
+        margin-left: 120px;
+    }
+    main > div > div:nth-child(2) >ul > li:first-child{
+       
+        margin-left: 70px;
+    }
+    main > div > div:nth-child(2) >ul > li:nth-child(2){
+       
+        margin-left: 30px;
+    }
+    main > div > div >a {
+        margin-left: 120px;
+       
+    }
+    table {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom:600px ;
+        
+    }
+
+    table td {
+        padding: 5px;
+        margin-bottom: 90px;
+    }
+  /*   table >td >tr{
+        padding: 5px;
+    }
+    */
+   
+    main > div > div >a {
+        margin-left: 20px;
+        color: #0d4a4b;
+    }
+}
+
+

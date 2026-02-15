@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Log_in</title>
+    <link rel="stylesheet" href="/static/css/log_in.css">
+
+</head>
+
+<body>
+
+    <form method='POST' action="{{ url_for('login1') }}">
+
+    <div>
+        
+        <h1>Log in</h1>
+        <div>
+            <input id="email" type="text" placeholder="email" name="email">
+            <input id="password" type="password" placeholder="password" name="password">
+
+        </div>
+        <div>
+
+            <!-- <button id="login_but"> Log in</button> -->
+            <button id="login_but" type="submit">Log In</button>
+        </div>
+
+    
+    </div>
+</form>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
