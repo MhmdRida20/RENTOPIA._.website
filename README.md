@@ -348,5 +348,5 @@ This project is licensed under the MIT License.
 - All contributors who have helped improve this project
 
 ---
-
-Made with ❤️ by the Rentopia Team
+Author:
+Mohamad Rida
