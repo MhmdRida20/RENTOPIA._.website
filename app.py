@@ -14,7 +14,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Mhmdali31300$@localhost/rentopia'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Mhmdali$@localhost/rentopia'
 app.config['SECRET_KEY'] = 'your_secret_key'
 
 
